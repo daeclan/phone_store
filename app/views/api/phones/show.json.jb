@@ -1,0 +1,8 @@
+{
+  id: @phone.id,
+  name: @phone.name,
+  price: @phone.price,
+  description: @phone.description,
+  storage: @phone.storage,
+  megapixels: @phone.megapixels,
+}
