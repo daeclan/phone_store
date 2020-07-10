@@ -23,11 +23,11 @@ class Api::PhonesController < ApplicationController
 
   def update
     @phone = Phone.find_by(id: params[:id])
-    @phone.name = params[:name] || @photo.name
-    @phone.price = params[:price] || @photo.price
-    @phone.description = params[:description] || @photo.description
-    @phone.storage = params[:storage] || @photo.storage
-    @phone.megapixels = params[:megapixels] || @photo.megapixels
+    @phone.name = params[:name] || @phone.name
+    @phone.price = params[:price] || @phone.price
+    @phone.description = params[:description] || @phone.description
+    @phone.storage = params[:storage] || @phone.storage
+    @phone.megapixels = params[:megapixels] || @phone.megapixels
     @phone.save
     render "show.json.jb"
   end
